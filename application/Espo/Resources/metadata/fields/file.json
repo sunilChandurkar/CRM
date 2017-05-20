@@ -1,0 +1,28 @@
+{
+   "params":[
+      {
+         "name":"required",
+         "type":"bool",
+         "default":false
+      },
+      {
+         "name": "sourceList",
+         "type": "multiEnum",
+         "view": "views/admin/field-manager/fields/source-list"
+      }
+   ],
+   "actualFields":[
+      "id"
+   ],
+   "notActualFields":[
+      "name"
+   ],
+   "filter": false,
+   "linkDefs": {
+      "type": "belongsTo",
+      "entity": "Attachment"
+   },
+   "fieldDefs":{
+      "skipOrmDefs": true
+   }
+}
